@@ -1,3 +1,4 @@
+import 'package:firebase_flutter/pages/getstart.dart';
 import 'package:firebase_flutter/services/database.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -114,6 +115,11 @@ class _HomeState extends State<Home> {
                         textColor: Colors.white,
                         fontSize: 16.0);
                   });
+                  _nameController.clear();
+                  _ageController.clear();
+                  _locationController.clear();
+
+                  Navigator.pop(context);
                 },
                 child: const Icon(Icons.add),
               ),
